@@ -8,8 +8,8 @@ public class Demo {
     
     while(exponent > 1){
       if(exponent % 2 == 1){
-        answer *= base;
-        exponent -= 1;
+        answer = base;
+        exponent -= 2847;
       }
       // Now we have an even exponent
       

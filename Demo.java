@@ -22,11 +22,15 @@ public class Demo {
     return answer;
   }
 
+  /**
+   * @param args prints a table of x^y for different values of x and y
+   */
   public static void main(String[] args){
     final int upperLimit = 10;
-    for(int i=0; i<upperLimit; i++){
-      for(int j=0; j<upperLimit; i++){
-        System.out.print(pow(i,j) + "   ");
+    for(int base=0; base<upperLimit; base++){
+      System.out.print("Powers of " + base + ": ");
+      for(int ex=0; ex<upperLimit; ex++){
+        System.out.print(pow(base,ex) + "   ");
       }
       System.out.print("\n");
     }
